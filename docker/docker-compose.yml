@@ -14,8 +14,8 @@ services:
           - rabbitmq
         ports:
           #http 服务，默认不映射出来
-          #- "5003:80"
-          - "5003:443"
+          - "5003:80"
+          #- "5003:443"
         volumes:
           - ./arl_web.log:/code/arl_web.log
           - ./config-docker.yaml:/code/app/config.yaml
